@@ -37,15 +37,74 @@
   </ul>  
 <p></p>
   <h2>
-    アジェンダ
+    タイムスケジュール
   </h2>
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          12:30
+        </th>
+        <td>
+          開場・受付
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>
+          13:00
+        </th>
+        <td>
+          導入支援・講義
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>
+          14:30
+        </th>
+        <td>
+          各自作業開始
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>
+          16:00
+        </th>
+        <td>
+          進捗報告
+        </td>
+        <td>
+          ※Slack上で行います
+          | <br>※リモート参加の方で、懇親会に参加される場合は移動をしはじめてください。
+        </td>
+      </tr>
+      <tr>
+        <th>
+          16:30
+        </th>
+        <td>
+          LT大会(技術共有会)
+        </td>
+        <td>
+          ※先輩エンジニアからのありがたいお話です
+        </td>
+      </tr>
+      <tr>
+        <th>
+          17:00
+        </th>
+        <td>
+          懇親会
+        </td>
+        <td>
+          ※参加には500円必要です。
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <p>
-    12:30 開場・受付<br>
-    13:00 導入支援 作業計画策定(どこまでやるか決める)<br>
-    14:00 作業開始<br>
-    16:00 進捗報告<br>
-    16:30 LT大会(技術共有会)<br>
-    ※同日開催のもくもく会のLTを見ます。<br>
       <a href="https://techplay.jp/event/626092" target="_blank">もくもく会の詳細はこちら</a><br>
     17時頃 懇親会<br>
   </p>
@@ -63,32 +122,48 @@
    参加したらまずやること
   </h3>
   <b>
-    slackとGitHubに入ってください
+    SlackとGitHubに入ってください
   </b>
   <p>
-    参加したら、slackに一言「参加しました」とコメントをください<br>
+    参加したら、Slackの下記チャンネルにてにて<pre>@channel 着席しました！</pre>とコメントをください<br>
     <a href="https://moqumoqu.slack.com/messages/C6C6B31R9/" target="_blank">Slack</a>
     ※登録がまだの方は<a href="https://goo.gl/forms/xAYvAl5j82jyrgoG3" target="_blank">こちら</a>
    </p>
   <p>
     GitHubのプロジェクトに、自己紹介をお願いします<br>
-  （GitHubのURL）
-  </p>
-  <h3>
-    目標設定について
-  </h3>
-  <p>
-    目標を設定し、GitHubに投稿してください。<br>
-    いつまでに、何を達成するのかは、自由に決めていただいて結構です。<br>
-    決められない方はこちらを参考にしてください。<br>
-   （freeCodeCampどこまでやれば、何を作れるかの早見表とか）<br>
+  <a href="https://github.com/MoquMoquCOM" target="_blank">https://github.com/MoquMoquCOM</a>
   </p>
   <h3>
     質問について
   </h3>
   <p>
     作業を進めていく中で、わからないところがあればSlackに質問を投げてください。<br>
-   （質問のテンプレート）
+   <b>質問のテンプレート</b>
+   <pre>
+     
+###前提・実現したいこと
+ここに質問したいことを詳細に書いてください
+(例)PHP(CakePHP)で●●なシステムを作っています。
+　　■■な機能を実装中に以下のエラーメッセージが発生しました。
+
+###発生している問題・エラーメッセージ
+
+```
+エラーメッセージ
+```
+
+###該当のソースコード
+```ここに言語を入力
+ここにご自身が実行したソースコードを書いてください
+```
+
+###試したこと
+課題に対してアプローチしたことを記載してください
+
+###補足情報(言語/FW/ツール等のバージョンなど)
+より詳細な情報
+
+   </pre>
   </p>
   <h2>
     宣伝
@@ -112,7 +187,7 @@
   /* カスタマイズ */
 }
 .container a {
-  text-decoration: none;
+  color:#000;
 }
 .container span.num {
   font-weight: bold;
@@ -217,5 +292,18 @@ h2:before {
   font-family: FontAwesome;
   content: "\f096";
   padding: .2em;
+}
+table {
+  border: 1px solid;
+}
+table th {
+  width: 100px;
+}
+table th, table td {
+  padding: 1%;
+  border-bottom: 1px solid #E1E2E1;
+}
+table tr:nth-child(6) > th, table tr:nth-child(6) > td {
+  border-bottom: 0px solid;
 }
 </style>
